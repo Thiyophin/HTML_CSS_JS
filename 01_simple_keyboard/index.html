@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/keyboard-svgrepo-com.svg" />
+  </head>
+  <body>
+    <main>
+      <div class="keys">
+        <div data-key="a" class="key">
+          A
+          <br />
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="s" class="key">
+          S
+          <br />
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="d" class="key">
+          D
+          <br />
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="f" class="key">
+          F
+          <br />
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="g" class="key">
+          G
+          <br />
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="h" class="key">
+          H
+          <br />
+          <span class="sound">ride</span>
+        </div>
+        <div data-key="j" class="key">
+          J
+          <br />
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="k" class="key">
+          K
+          <br />
+          <span class="sound">tom</span>
+        </div>
+        <div data-key="l" class="key">
+          L
+          <br />
+          <span class="sound">tink</span>
+        </div>
+      </div>
+      <audio data-key="a" src="sounds/clap.wav"></audio>
+      <audio data-key="s" src="sounds/hihat.wav"></audio>
+      <audio data-key="d" src="sounds/kick.wav"></audio>
+      <audio data-key="f" src="sounds/openhat.wav"></audio>
+      <audio data-key="g" src="sounds/boom.wav"></audio>
+      <audio data-key="h" src="sounds/ride.wav"></audio>
+      <audio data-key="j" src="sounds/snare.wav"></audio>
+      <audio data-key="k" src="sounds/tom.wav"></audio>
+      <audio data-key="l" src="sounds/tink.wav"></audio>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
