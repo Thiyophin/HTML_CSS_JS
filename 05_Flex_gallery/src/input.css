@@ -1,1 +1,33 @@
 @import "tailwindcss";
+@layer components {
+  .panel > * {
+    @apply m-0 transition-transform duration-500 flex-[1_0_auto] justify-center items-center;
+  }
+
+  .panel p {
+    @apply uppercase text-[2em];
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  }
+
+  .panel {
+    @apply [&>p:nth-child(2)]:text-[4em] flex-1 justify-center items-center flex flex-col transition-[flex-grow] duration-300;
+  }
+
+  .panel.open {
+    @apply text-[40px] flex-5;
+  }
+  .panel > :first-child {
+  @apply -translate-y-full;
+}
+
+.panel > :last-child {
+  @apply translate-y-full;
+}
+.panel.open-active >:first-child{
+    @apply translate-y-0
+}
+.panel.open-active >:last-child{
+    @apply translate-y-0
+}
+}
